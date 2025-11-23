@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 
-.generic_header_shadow {
+.generic_dropshadow {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
