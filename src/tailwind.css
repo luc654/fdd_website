@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root{
+    --primary-bg-color: #3F7265;
+    --secondary-bg-color: #82ADA2;
+}
 
 .generic_dropshadow {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -7,4 +11,12 @@
 
 .text_not_important{
     color: #656565;
+}
+
+.primary-bg{
+    background-color: var(--primary-bg-color);
+}
+
+.secondary-bg{
+    background-color: var(--secondary-bg-color);
 }
