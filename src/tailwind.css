@@ -20,3 +20,23 @@
 .secondary-bg{
     background-color: var(--secondary-bg-color);
 }
+
+html,
+body {
+    overflow: auto;      
+}
+
+/* Chrome/Safari/Edge/Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* IE/old Edge */
+html {
+    -ms-overflow-style: none;
+}
