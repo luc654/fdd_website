@@ -15,7 +15,7 @@
   <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0">
 
     <!-- MOBILE MENU -->
-    <div class="flex justify-between md:hidden">
+    <div class="flex justify-between sm:hidden">
 
       <div class=" w-30">
         <img src="public\img\che-logo.jpg" alt="Website logo" srcset="">
@@ -28,7 +28,7 @@
     </div>
 
     <!-- TABLET MENU -->
-    <div class="hidden md:flex justify-between">
+    <div class="hidden sm:flex justify-between">
       <div class="flex items-center">
         <div class="w-50">
           <img src="public\img\che-logo.jpg" alt="Website logo" srcset="">
@@ -60,7 +60,7 @@
     <p class="text_not_important text-center text-xl px-20">
       Experienced full-stack developer with more then 4 years of in-field knowledge
     </p>
-    <div class="w-full flex justify-around mt-10">
+    <div class="w-full sm:w-2/3 mx-auto flex justify-around mt-10">
 
       <button class="w-45 p-3 bg-[#3E7164] rounded-full text-white font-bold hover:bg-[#345e54] transition">
         Explore articles
@@ -86,7 +86,9 @@ A cornerstone for this website.
 
   <!-- Carousel card -->
 
-  <div class="mt-30 w-full">
+
+  <!-- MOBILE -->
+  <div class="mt-30 w-full sm:hidden">
     <div class="w-5/6 h-[574px] bg-[url(/public/img/user-experience-card.jpg)] flex flex-col items-center pt-8 bg-[#0000004f] bg-blend-multiply bg-cover mx-auto rounded-3xl" style="background-position: calc(60%) center;">
       <h2 class="font-bold text-white text-6xl text-center ">UX / UI</h2>
       <p class="mt-8 text-white text-center">Design and user accessibility</p>
@@ -102,6 +104,46 @@ A cornerstone for this website.
       </div>
     </div>
   </div>
+
+
+
+
+  <!-- TABLET -->
+
+  <div class="mt-30 w-full hidden sm:flex sm:flex-wrap ">
+    <div class="w-5/12 h-[574px] bg-[url(/public/img/user-experience-card.jpg)] flex flex-col items-center pt-8 bg-[#0000004f] bg-blend-multiply bg-cover mx-auto rounded-3xl" style="background-position: calc(60%) center;">
+      <h2 class="font-bold text-white text-6xl text-center ">UX / UI</h2>
+      <p class="mt-8 text-white text-center">Design and user accessibility</p>
+      <button class="w-4/5 border-3 border-white rounded-full p-4 py-2 mt-20">
+        <p class="text-2xl text-white">More information</p>
+      </button>
+    </div>
+
+    <div class="w-5/12 h-[574px] bg-[url(/public/img/user-experience-card.jpg)] flex flex-col items-center pt-8 bg-[#0000004f] bg-blend-multiply bg-cover mx-auto rounded-3xl" style="background-position: calc(60%) center;">
+      <h2 class="font-bold text-white text-6xl text-center ">UX / UI</h2>
+      <p class="mt-8 text-white text-center">Design and user accessibility</p>
+      <button class="w-4/5 border-3 border-white rounded-full p-4 py-2 mt-20">
+        <p class="text-2xl text-white">More information</p>
+      </button>      
+    </div>
+
+    <div class="w-5/12 mt-14 h-[574px] bg-[url(/public/img/user-experience-card.jpg)] flex flex-col items-center pt-8 bg-[#0000004f] bg-blend-multiply bg-cover mx-auto rounded-3xl" style="background-position: calc(60%) center;">
+      <h2 class="font-bold text-white text-6xl text-center ">UX / UI</h2>
+      <p class="mt-8 text-white text-center">Design and user accessibility</p>
+      <button class="w-4/5 border-3 border-white rounded-full p-4 py-2 mt-20">
+        <p class="text-2xl text-white">More information</p>
+      </button>
+    </div>
+
+    <div class="w-5/12 mt-14 h-[574px] bg-[url(/public/img/user-experience-card.jpg)] flex flex-col items-center pt-8 bg-[#0000004f] bg-blend-multiply bg-cover mx-auto rounded-3xl" style="background-position: calc(60%) center;">
+      <h2 class="font-bold text-white text-6xl text-center ">UX / UI</h2>
+      <p class="mt-8 text-white text-center">Design and user accessibility</p>
+      <button class="w-4/5 border-3 border-white rounded-full p-4 py-2 mt-20">
+        <p class="text-2xl text-white">More information</p>
+      </button>      
+    </div>
+  </div>
+
 
 
 
