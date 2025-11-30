@@ -31,7 +31,7 @@
     <div class="hidden sm:flex justify-between">
       <div class="flex items-center">
         <div class="w-50">
-          <img src="public\img\che-logo.jpg" alt="Website logo" srcset="">
+          <img src="\public\img\che-logo.jpg" alt="Website logo" srcset="">
         </div>
         <div class="flex mt-3 pl-2 w-full justify-between">
           <a href="#" class="text-lg">Welcome</a>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="pt-5 pr-2">
-        <button class="w-45 p-3 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
+        <button class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
         Explore articles
       </button>
       </div>
@@ -51,48 +51,55 @@
     <div class="mt-14 ">
     </div>
 
+    <div class="sm:flex sm:pt-20">
 
-    <!-- MOBILE hero -->
+      
+      <!-- MOBILE hero -->
+      
+      <div class="relative w-full h-[450px] bg-[url(/public/img/contact-me.jpg)] bg-cover flex items-center justify-center sm:w-1/2 sm:h-[1100px]" style="background-position: calc(60%) center;">
+        
+        <!-- Overlay -->
+        <div class="absolute inset-0 sm:hidden" style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
+        
+        <!-- Text -->
+        <h1 class="text-6xl  text-white relative z-20 mt-[300px] ml-14 sm:hidden">
+          Get in touch
+        </h1>
+      </div>
+      
+      <div class="sm:w-1/2 px-5 sm:flex sm:flex-col sm:justify-between sm:items-center">
 
-<div class="relative w-full h-[450px] bg-[url(/public/img/contact-me.jpg)] bg-cover flex items-center justify-center ">
-  
-  <!-- Overlay -->
-  <div class="absolute inset-0" style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
-  
-  <!-- Text -->
-  <h1 class="text-6xl  text-white relative z-20 mt-[300px] ml-14">
-    Get in touch
-  </h1>
-</div>
-
-<!-- Form -->
-<form action="" class="w-full mt-10 px-5 pb-12 flex flex-col gap-y-[30px]">
-  <input type="text" name="name" id="name" class="w-full border-2 p-6 pl-4 border-[#656565] rounded-md h-[40px] " placeholder="Name*">
-  <input type="email" name="email" id="email" class="w-full border-2 p-6 pl-4 border-[#656565] rounded-md h-[40px] " placeholder="Email*">
-  
-  <textarea name="question" id="question" class="w-full border-2 p-6 pt-2 pl-4 border-[#656565] rounded-md " placeholder="Question..."></textarea>
-  
-
-  <input type="submit" value="Send it my way" class="w-full text-white  pb-10 pt-4 pl-4  primary-bg rounded-md h-[40px] text-center ">
-</form>
-
-<!-- Mail, phone and other icons -->
-    
-<div class=" flex justify-around mx-2.5 h-fit pb-2">
-  <a href="tel:123" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
-    <span class="material-symbols-outlined scale-200 text_not_important">
-  call
-  </span>
-  </a>
-    <a href="mailto:lorem@mail.com" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
-    <span class="material-symbols-outlined scale-200 text_not_important">
-  mail
-  </span>
-  </a>
-    <a href="text:123" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
-    <span class="material-symbols-outlined scale-200 text_not_important">
-  chat
-  </span>
-  </a>
-</div>
-</body>
+        <!-- Form -->
+        <form action="" class="w-full mt-10  pb-12 flex flex-col gap-y-[30px] sm:mt-0">
+          <h1 class="text-7xl text-[#3E7164] w-full text-right hidden sm:block">Get in touch</h1>
+          <input type="text" name="name" id="name" class="w-full border-2 p-6 pl-4 border-[#656565] rounded-md h-[40px] " placeholder="Name*">
+          <input type="email" name="email" id="email" class="w-full border-2 p-6 pl-4 border-[#656565] rounded-md h-[40px] " placeholder="Email*">
+          
+          <textarea name="question" id="question" class="w-full border-2 p-6 pt-2 pl-4 border-[#656565] rounded-md sm:h-100" placeholder="Question..."></textarea>
+          
+          
+          <input type="submit" value="Send it my way" class="w-full text-white  pb-10 pt-4 pl-4  primary-bg rounded-md h-[40px] text-center ">
+        </form>
+        
+        <!-- Mail, phone and other icons -->
+        
+        <div class=" flex justify-around mx-2.5 h-fit pb-2 sm:relative sm:bottom-9 max-w-[600px] sm:w-full">
+          <a href="tel:123" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
+            <span class="material-symbols-outlined scale-200 text_not_important">
+              call
+            </span>
+          </a>
+          <a href="mailto:lorem@mail.com" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
+            <span class="material-symbols-outlined scale-200 text_not_important">
+              mail
+            </span>
+          </a>
+          <a href="text:123" class="size-16 rounded-full border-3 border-[#656565] flex items-center justify-center dropshadow_hover hover:border-[#3E7164]">
+            <span class="material-symbols-outlined scale-200 text_not_important">
+              chat
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    </body>
