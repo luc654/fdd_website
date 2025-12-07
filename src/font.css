@@ -1,0 +1,8 @@
+@font-face {
+  font-family: inclusive; /* set name */
+  src: url(..\public\fonts\InclusiveSans-Medium.woff2); /* url of the font */
+}
+
+.inclusive_sans{
+    font-family: inclusive;
+}
