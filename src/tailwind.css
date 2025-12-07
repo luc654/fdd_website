@@ -70,3 +70,13 @@ button:focus {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 
 }
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+
+}
+.input_search{
+    border-color: #656565!important;
+    box-sizing: border-box;
+}

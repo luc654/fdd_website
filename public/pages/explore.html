@@ -122,15 +122,35 @@
 
     <section class="absolute w-full mt-20 h-100 bg-[url(/public/img/linux-ls.jpg)] bg-cover">
       <!-- OVERLAY -->
-      <div class="absolute inset-0 sm:hidden" style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
+      <div class="absolute inset-0 " style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
 
-      <h2 class="text-6xl  text-white relative z-20 mt-10 ml-4 sm:hidden">
-        Get in touch
+      <h2 class="text-6xl  text-white relative z-20 mt-10 ml-4">
+        Other article
       </h2>
       <a href="#"
         class="relative block w-50 rounded-full border-2 border-white text-white p-3 z-20 mt-50 ml-5 text-center font-bold text-1xl">
         Read More
       </a>
     </section>
+
+
+    <!-- SEARCH BAR -->
+    <search class="mx-auto w-4/5 rounded-3xl  generic_dropshadow h-40 mt-130 sticky flex flex-col p-4">
+
+      <div class="w-full flex gap-x-4">
+        <span class="material-symbols-outlined google-icon text_not_important">
+          search
+        </span>
+<input type="text" name="search" id="search" placeholder="Search site..." class="text_not_important focus:border-b p pl-2 input_search w-2/3" 
+>
+
+      </div>
+
+      <div class="flex justify-evenly pt-8 gap-x-4">
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">UX /UI</button>
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Testing</button>
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Coding</button>
+      </div>
+    </search>
   </div>
 </body>
