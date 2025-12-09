@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDD | Contact</title>
   <link href="/src/tailwind.css" rel="stylesheet">
+  <link href="/src/font.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-<body >  
+
+<body>
 
   <!-- HEADER -->
   <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]">
@@ -35,7 +37,7 @@
         </div>
         <div class="flex mt-3 pl-2 w-full justify-between">
           <a href="index" class="text-lg">Welcome</a>
-<a href="explore" class="text-lg text_not_important">Articles</a>
+          <a href="explore" class="text-lg text_not_important">Articles</a>
 
 
           <a href="contact" class="text-lg text_not_important">Contact me</a>
@@ -43,34 +45,179 @@
       </div>
       <div class="pt-5 pr-2">
         <button class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
-        Explore articles
-      </button>
+          Explore articles
+        </button>
       </div>
     </div>
-    </header>
-    
-    <!-- CONTAINER -->
-    <div class="w-full mt-14 ">
+  </header>
 
-      <!-- HERO -->
-        <div class="bg-[url(/public/img/pcb.jpg)] bg-cover bg-[150%] w-full h-80 bg-[#4e897acb] bg-blend-multiply flex flex-col pt-16 px-20">
+  <!-- CONTAINER -->
+  <div class="w-full mt-14 ">
 
-          <h1 class="text-4xl text-white w-3/5">A semester full of knowledge</h1>
-          <p class="text-white mt-15 text-right w-full flex justify-end text-xl">Cramped <br>
- into one website</p>
-       </div>
+    <!-- HERO -->
+    <div
+      class="bg-[url(/public/img/pcb.jpg)] bg-cover bg-[150%] w-full h-80 bg-[#4e897acb] bg-blend-multiply flex flex-col pt-16 px-20">
 
-
-       <!-- TEXT -->
-       <section class="mt-20">
-          <h2 class="mx-auto text-center text-5xl mt-20">Articles</h2>
-          <p class="text_not_important mx-auto w-2/3 text-center mt-6">This page displays an entire semester worth of information for the subject <i>FDD</i>. In this page you can read and learn about my 20 week journey. Each article is categorized depending on subjects ranging from <i>UX/UI</i>, <i>Testing</i> and of course <i>Coding</i>.</p>
-       </section>
-
-
-
-       <section class="">
-
-       </section>
+      <h1 class="text-4xl text-white w-3/5">A semester full of knowledge</h1>
+      <p class="text-white mt-15 text-right w-full flex justify-end text-xl">Cramped <br>
+        into one website</p>
     </div>
-    </body>
+
+
+    <!-- TEXT -->
+    <section class="mt-20">
+      <h2 class="mx-auto text-center text-5xl mt-20">Articles</h2>
+      <p class="text_not_important mx-auto w-2/3 text-center mt-6">This page displays an entire semester worth of
+        information for the subject <i>FDD</i>. In this page you can read and learn about my 20 week journey. Each
+        article is categorized depending on subjects ranging from <i>UX/UI</i>, <i>Testing</i> and ofcourse
+        <i>Coding</i>.
+      </p>
+    </section>
+
+
+    <!-- FEATURED RESOURCES -->
+    <section class="w-full flex flex-col mt-30">
+      <h2 class="text-3xl mx-auto">Featured Resources</h2>
+
+      <!-- CARD HOLDER -->
+      <div class="flex flex-col gap-y-8 mt-10 w-10/12 mx-auto sm:flex-row gap-x-8 justify-center">
+        <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2]"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article>
+
+        <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2]"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article>
+
+
+      </div>
+    </section>
+
+
+    <!-- BLOG BANNER -->
+    <div class="sm:w-10/12 sm:mx-auto">
+
+      <section class="absolute w-full mt-20 h-100 bg-[url(/public/img/linux-ls.jpg)] bg-cover sm:relative sm:rounded-2xl generic_dropshadow sm:pl-10">
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 sm:rounded-2xl" style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
+        
+        <h2 class="text-6xl  text-white relative z-20 mt-10 ml-4 sm:top-10">
+          Other article
+        </h2>
+        <a href="#"
+        class="relative block w-50 rounded-full border-2 border-white text-white p-3 z-20 mt-50 ml-5 text-center font-bold text-1xl sm:mt-65">
+        Read More
+      </a>
+    </section>
+  </div>
+    
+    
+    <!-- SEARCH BAR -->
+    <search class="mx-auto w-4/5 rounded-3xl  generic_dropshadow h-40 mt-130 sticky flex flex-col p-4  sm:mt-10 sm:w-10/12 ">
+      
+      <div class="w-full flex gap-x-4">
+        <span class="material-symbols-outlined google-icon text_not_important">
+          search
+        </span>
+<input type="text" name="search" id="search" placeholder="Search site..." class="text_not_important focus:border-b p pl-2 input_search w-2/3" 
+>
+
+      </div>
+
+      <div class="flex justify-evenly pt-8 gap-x-4">
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">UX /UI</button>
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Testing</button>
+        <button class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Coding</button>
+      </div>
+    </search>
+
+
+<!-- MAIN CONTAINER -->
+    <section class="flex flex-col gap-y-8 mt-10 w-10/12 mx-auto sm:flex-row  justify-center sm:flex-wrap sm:justify-between">
+ <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-5/12"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article>
+         <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-5/12"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article> 
+ <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-5/12"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article>
+         <article class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-5/12"
+          aria-details="blog/coding">
+          <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+          <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+          <div class="pl-4 flex gap-x-2 pt-4">
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+            <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          </div>
+
+          <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+              class="material-symbols-outlined primary-text google-icon">
+              arrow_forward
+            </span></div>
+        </article> 
+    </section>
+  </div>
+</body>

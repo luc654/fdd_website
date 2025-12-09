@@ -11,10 +11,22 @@
 .dropshadow_hover:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
+
+.light_dropshadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
 .text_not_important{
     color: #656565;
 }
 
+/* https://stackoverflow.com/questions/55395192/resizing-google-material-icons-font-size */
+.google-icon{
+    font-size: 45px!important;
+    transition: 300ms;
+}
+.material-symbols-outlined{
+    user-select: none;
+}
 .primary-bg{
     background-color: var(--primary-bg-color);
 }
@@ -22,7 +34,9 @@
 .secondary-bg{
     background-color: var(--secondary-bg-color);
 }
-
+.primary-text{
+    color: var(--primary-bg-color);;
+}
 html,
 body {
     overflow: auto;      
@@ -55,4 +69,14 @@ button:focus {
     border-color: var(--primary-bg-color);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+
+}
+.input_search{
+    border-color: #656565!important;
+    box-sizing: border-box;
 }
