@@ -1,8 +1,12 @@
+/* inclusive-sans-500 - latin */
 @font-face {
-  font-family: inclusive; /* set name */
-  src: url(..\public\fonts\InclusiveSans-Medium.woff2); /* url of the font */
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inclusive Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('..public/fonts/inclusive-sans-v4-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 .inclusive_sans{
-    font-family: inclusive;
+    font-family: 'Inclusive Sans';
 }
