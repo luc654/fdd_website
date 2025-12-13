@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/tailwind.css" rel="stylesheet">
   <link href="/src/animations.css" rel="stylesheet">
+  <link href="/node_modules\@splidejs\splide\dist\css\splide.min.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,menu" />
 </head>
@@ -213,9 +214,17 @@
           <p class="text_not_important px-10 text-center mt-5 text-xl">Projects ranging from embedded system libraries to full webpages</p>
         </div>
       </div>
-      
     </div>
     
+    <div class="w-full mt-20 h-[400px] bg-orange-400 splide">
+        <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide text-black">Slide 01</li>
+			<li class="splide__slide">Slide 02</li>
+			<li class="splide__slide">Slide 03</li>
+		</ul>
+  </div>
+    </div>
     
     <div class="relative w-full h-[800px] pt-30">
       <div class="absolute inset-0 bg-[url(/public/img/computer.jpg)] bg-cover bg-center filter grayscale bg-[#3f7265bc] bg-blend-multiply"></div>
@@ -246,9 +255,11 @@
     </div>
   </div>
   <script src="\public/scripts/mobileMenu.js"></script>
-    <script src="\public/scripts/onload.js"></script>
-    <script src="\public/scripts/helpers.js"></script>
-    <!-- <script src="\public/scripts/jumpscare.js"></script> -->
+  <script type="module" src="\public/scripts/carousel.js"></script>
+
+  <script src="\public/scripts/onload.js"></script>
+  <script src="\public/scripts/helpers.js"></script>
+  <!-- <script src="\public/scripts/jumpscare.js"></script> -->
     
   </body>
   </html>
