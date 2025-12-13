@@ -6,11 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDD | Contact</title>
   <link href="/src/tailwind.css" rel="stylesheet">
+  <link href="/src/animations.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
+ <!-- MOBILE MENU OPEN -->
+<div id="menu-overlay" class="fixed  w-full h-full z-50 sm:hidden hidden background-fadein">
+  <div id="menu-panel" class="fixed top-0 left-0 w-[400px] bg-white h-full menu-panel">
+    <div class="flex justify-between items-center pr-6">
+      <img src="\public\img\che-logo.jpg" alt="Website logo" class="w-40">
+      <span class="material-symbols-outlined select-none mt-6 cursor-pointer"
+            style="font-size: 50px;" id="close-menu">
+        close
+      </span>
+    </div>
 
+    <div class="h-px bg-[#d9d9d9] w-11/12 mx-auto mt-4"></div>
+
+    <div class="pl-8 mt-16 flex flex-col gap-y-10">
+      <a class="text-xl text_not_important" href="index">Home</a>
+      <a class="text-xl text_not_important" href="explore">Articles</a>
+      <a class="text-xl text_not_important" href="#">About me</a>
+      <a class="text-xl" href="contact">Contact</a>
+    </div>
+
+    <button class="fixed bottom-10 left-[100px] w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
+      Explore articles
+    </button>
+  </div>
+</div>
   <!-- HEADER -->
   <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]">
 
@@ -21,7 +46,7 @@
         <img src="\public\img\che-logo.jpg" alt="Website logo" srcset="">
       </div>
       <div class=" p-2 flex items-center">
-        <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;">
+        <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;" id="open-menu">
           menu
         </span>
       </div>
@@ -104,4 +129,6 @@
         </div>
       </div>
     </div>
+      <script src="\public/scripts/mobileMenu.js"></script>
     </body>
+</html>
