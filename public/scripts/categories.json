@@ -1,17 +1,46 @@
 {
   "categories": [
     {
-      "categoryName": "HTML / CSS",
+      "categoryName": "html/css",
       "subCategories": [
-        "Front-end",
-        "Styling"
+        "front end",
+        "styling",
+        "responsive design",
+        "accessibility",
+        "languages"
       ]
     },
     {
-      "categoryName": "UX / UI",
+      "categoryName": "ux ui",
       "subCategories": [
-        "Front-end",
-        "Styling"
+        "wireframing",
+        "prototyping",
+        "interaction design",
+        "visual design",
+        "usability testing",
+        "design systems"
+      ]
+    },
+    {
+      "categoryName": "javascript",
+      "subCategories": [
+        "fundamentals",
+        "dom manipulation",
+        "es6 plus",
+        "frameworks",
+        "state management",
+        "performance optimization"
+      ]
+    },
+    {
+      "categoryName": "testing",
+      "subCategories": [
+        "user research",
+        "product research",
+        "end to end testing",
+        "usability testing",
+        "accessibility testing",
+        "test automation"
       ]
     }
   ]

@@ -80,3 +80,8 @@ input:focus {
     border-color: #656565!important;
     box-sizing: border-box;
 }
+
+.buttonSelected{
+    background-color: #3F7265;
+    color: white;
+}

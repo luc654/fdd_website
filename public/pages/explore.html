@@ -109,9 +109,11 @@
 
       <!-- CARD HOLDER -->
       <div class="flex flex-col gap-y-8 mt-10 w-10/12 mx-auto sm:flex-row gap-x-8 justify-between">
+
+
         <article
           class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-4/12"
-          aria-details="blog/coding">
+        >
           <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
           <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
 
@@ -125,10 +127,12 @@
               arrow_forward
             </span></div>
         </article>
+
+
 
         <article
           class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-5/12 xl:basis-4/12"
-          aria-details="blog/coding">
+        >
           <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
           <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
 
@@ -143,9 +147,11 @@
             </span></div>
         </article>
 
+
+
         <article
           class="relative rounded-4xl light_dropshadow w-full h-90 xl:flex flex-col pt-5 px-6 bg-[#F2F2F2] hidden sm:basis-5/12 xl:basis-4/12"
-          aria-details="blog/coding">
+        >
           <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
           <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
 
@@ -199,12 +205,11 @@
 
       <div class="flex justify-evenly pt-8 gap-x-4">
         <button
-          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">UX
-          /UI</button>
+          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition" id="search_button" data-searchinfo="UX/UI" >UX/UI</button>
         <button
-          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Testing</button>
+          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition" id="search_button" data-searchinfo="html/css" >HTML CSS</button>
         <button
-          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition">Coding</button>
+          class="rounded-full border-2  py-1 border-[#82ADA2] w-[30%] hover:bg-[#82ADA2] hover:text-white transition" id="search_button" data-searchinfo="Coding" >Coding</button>
       </div>
     </search>
 
@@ -212,9 +217,11 @@
     <!-- MAIN CONTAINER -->
     <section
       class="flex flex-col gap-y-8 mt-10 w-10/12 mx-auto sm:flex-row  justify-center sm:flex-wrap md:justify-between gap-x-6 ">
+
+
       <article
         class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-[30%]"
-        id="article" data-categories="html-css,frontend,styling" aria-details="blog/coding">
+        id="article" data-categories="html css,front end,styling">
         <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
         <h3 class="mt-4 text-2xl inclusive_sans">Something about HTML</h3>
 
@@ -228,15 +235,17 @@
             arrow_forward
           </span></div>
       </article>
+
+
       <article
         class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-[30%]"
-        id="article" aria-details="blog/coding">
+        id="article" data-categories="html css,frontend,lanuages">
         <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
         <h3 class="mt-4 text-2xl inclusive_sans">Something about CSS</h3>
 
         <div class="pl-4 flex gap-x-2 pt-4">
-          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
-          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Frontend</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Lanuages</div>
         </div>
 
         <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
@@ -244,15 +253,17 @@
             arrow_forward
           </span></div>
       </article>
+
+
       <article
         class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-[30%]"
-        id="article" aria-details="blog/coding">
-        <img src="../img/html-css-card.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
-        <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+        id="article" data-categories="research,ux-ui,prototyping">
+        <img src="../img/html css-card.jpg" alt="Code image" class="w-full h-40 rounded-2xl object-cover">
+        <h3 class="mt-4 text-2xl inclusive_sans">Proto-personas</h3>
 
         <div class="pl-4 flex gap-x-2 pt-4">
-          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
-          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Research</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">prototyping</div>
         </div>
 
         <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
