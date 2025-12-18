@@ -1,7 +1,7 @@
 const target = 'text-section';
 const sizes = ['text-base', 'text-lg', 'text-xl']
 let index = 0;
-document.getElementById('enlargeText').addEventListener('click', () => {
+document.getElementById('enlargeText').addEventListener('mousedown', () => {
     document.querySelectorAll(`#${target}`).forEach(elem => {
         elem.classList.remove(sizes[index]);
         elem.classList.add(sizes[index + 1]);
