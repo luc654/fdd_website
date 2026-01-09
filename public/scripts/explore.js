@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filter(params.cat);
     }
 
-    filter('html/css');
 
 });
 
@@ -59,26 +58,14 @@ function returnOnlySubcategoriesFromJSON(json, category){
 }
 
 // dont talk shit about 'uhh function too long' this is a helper function and is only needed once and gives all the explanation.
-function iterateThroughAllArticlesAndRemoveWithoutGivenList(categoriesSubcat){
-    document.querySelectorAll(`#${articleId}`).forEach((article) => {
-        if(article.dataset.categories){
-            const categories = article.dataset.categories.split(",");
-            let flag = false;
-            categories.forEach((subCat)  =>{
-                categoriesSubcat.forEach((acceptableElement) =>{
-                    if(subCat == acceptableElement){
-                        flag = true;
-                        article.classList.remove('hidden');
-                        return;
-                    }
-                });
-                if(!flag){
-                    article.classList.add('hidden');        
-                }
-            });
-        } else {
-            article.classList.add('hidden');
-        }
+function iterateThroughAllArticlesAndRemoveWithoutGivenList(categoriesSubcat) {
+  document.querySelectorAll('article').forEach(article => {
+    const categories = article.dataset.categories?.split(',') || [];
 
-    });
+    const matches = categories.some(cat =>
+      categoriesSubcat.includes(cat.trim())
+    );
+
+    article.classList.toggle('hidden', !matches);
+  });
 }
