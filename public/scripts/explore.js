@@ -5,11 +5,18 @@ const articleId = 'article';
 
 document.querySelectorAll('#search_button').forEach(element => {
     element.addEventListener('click', (e) => {
-        document.querySelectorAll('.buttonSelected').forEach(element => {
-            element.classList.remove('buttonSelected');
-        });
-        e.target.classList.add('buttonSelected');
-        filter(e.target.dataset.searchinfo)
+        if([...e.target.classList].includes('buttonSelected')){
+            document.querySelectorAll('.buttonSelected').forEach(element => {
+                element.classList.remove('buttonSelected');
+            });
+            showAllArticles();
+        } else {
+            document.querySelectorAll('.buttonSelected').forEach(element => {
+                element.classList.remove('buttonSelected');
+            });
+            e.target.classList.add('buttonSelected');
+            filter(e.target.dataset.searchinfo)
+        }
     });
 });
 
@@ -68,4 +75,11 @@ function iterateThroughAllArticlesAndRemoveWithoutGivenList(categoriesSubcat) {
 
     article.classList.toggle('hidden', !matches);
   });
+}
+
+function showAllArticles(){
+      document.querySelectorAll('article').forEach(article => {
+            article.classList.remove('hidden');
+    });
+
 }
