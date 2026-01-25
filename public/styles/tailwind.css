@@ -18,6 +18,17 @@
 :root{
     --primary-bg-color: #3F7265;
     --secondary-bg-color: #82ADA2;
+    --tretairy-bg-color: #255a4c;
+}
+
+#text-section a {
+    color: var(--primary-bg-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#text-section a:hover {
+    color: var(--tretairy-bg-color);
 }
 
 .generic_dropshadow {
