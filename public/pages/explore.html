@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FDD | Contact</title>
-  <link href="/src/tailwind.css" rel="stylesheet">
-  <link href="/src/font.css" rel="stylesheet">
-  <link href="/src/animations.css" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link href="../styles/tailwind.css" rel="stylesheet">
+  <link href="../styles/animations.css" rel="stylesheet">
+  <link href="../styles/output.css" rel="stylesheet">
+  <link href="../styles/splide.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/gradient.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>FDD | Explore</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
   <div id="menu-overlay" class="fixed  w-full h-full z-50 sm:hidden hidden background-fadein">
     <div id="menu-panel" class="fixed top-0 left-0 w-[400px] bg-white h-full menu-panel">
       <div class="flex justify-between items-center pr-6">
-        <img src="\public\img\che-logo.jpg" alt="Website logo" class="w-40">
+        <img src="../img/che-logo.jpg" alt="Website logo" class="w-40">
         <span class="material-symbols-outlined select-none mt-6 cursor-pointer" style="font-size: 50px;"
           id="close-menu">
           close
@@ -27,8 +28,8 @@
       <div class="h-px bg-[#d9d9d9] w-11/12 mx-auto mt-4"></div>
 
       <div class="pl-8 mt-16 flex flex-col gap-y-10">
-        <a class="text-xl text_not_important" href="index">Home</a>
-        <a class="text-xl" href="explore">Articles</a>
+        <a class="text-xl" href="index">Home</a>
+        <a class="text-xl text_not_important" href="explore">Articles</a>
         <a class="text-xl text_not_important" href="#">About me</a>
         <a class="text-xl text_not_important" href="contact">Contact</a>
       </div>
@@ -39,14 +40,16 @@
       </button>
     </div>
   </div>
+
+
   <!-- HEADER -->
-  <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]">
+  <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]  ">
 
     <!-- MOBILE MENU -->
     <div class="flex justify-between sm:hidden">
 
       <div class=" w-30">
-        <img src="\public\img\che-logo.jpg" alt="Website logo" srcset="">
+        <img src="../img/che-logo.jpg" alt="Website logo" srcset="">
       </div>
       <div class=" p-2 flex items-center">
         <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;" id="open-menu">
@@ -56,10 +59,10 @@
     </div>
 
     <!-- TABLET MENU -->
-    <div class="hidden sm:flex justify-between max-w-[2400px] mx-auto">
+    <div class="hidden sm:flex justify-between  max-w-[2400px] mx-auto">
       <div class="flex items-center">
         <div class="w-50">
-          <img src="\public\img\che-logo.jpg" alt="Website logo" srcset="">
+          <img src="../img/che-logo.jpg" alt="Website logo" srcset="">
         </div>
         <div class="flex mt-3 pl-2 w-full justify-between">
           <a href="index" class="text-lg">Welcome</a>
@@ -70,9 +73,12 @@
         </div>
       </div>
       <div class="pt-5 pr-2">
-        <button class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
-          Explore articles
-        </button>
+<button
+  onclick="window.location.href='/public/pages/explore'"
+  class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition"
+>
+  Explore articles
+</button>
       </div>
     </div>
   </header>
@@ -81,7 +87,8 @@
 
   <!-- HERO -->
   <div
-    class="bg-[url(/public/img/pcb.jpg)] mt-14 bg-cover bg-[150%] w-full h-80 bg-[#4e897acb] bg-blend-multiply flex flex-col pt-16 px-20">
+    class="mt-14 bg-cover bg-[150%] w-full h-80 bg-[#4e897acb] bg-blend-multiply flex flex-col pt-16 px-20"
+          style="background-image: url('../img/pcb.jpg');">
     <div class="w-full lg:w-11/12 mx-auto max-w-[1333px]">
 
       <h1 class="text-4xl text-white w-3/5 lg:w-2/5 lg:text-5xl">A semester full of knowledge</h1>
@@ -175,7 +182,8 @@
     <div class="sm:w-10/12 sm:mx-auto">
 
       <section
-        class="absolute w-full mt-20 h-100 bg-[url(/public/img/linux-ls.jpg)] bg-cover sm:relative sm:rounded-2xl generic_dropshadow sm:pl-10">
+        class="absolute w-full mt-20 h-100 bg-cover sm:relative sm:rounded-2xl generic_dropshadow sm:pl-10"
+        style="background-image: url('../img/linux-ls.jpg');">
         <!-- OVERLAY -->
         <div class="absolute inset-0 sm:rounded-2xl" style="background: rgba(63, 114, 101, 0.6); z-index: 10;"></div>
 
@@ -192,7 +200,7 @@
 
     <!-- SEARCH BAR -->
     <search
-      class="mx-auto w-4/5 rounded-3xl  generic_dropshadow h-40 mt-130 sticky flex flex-col p-4  sm:mt-10 sm:w-10/12 ">
+      class="mx-auto w-10/12 rounded-3xl  generic_dropshadow h-40 mt-130 sticky flex flex-col p-4  sm:mt-10">
 
       <div class="w-full flex gap-x-4">
         <span class="material-symbols-outlined google-icon text_not_important">
@@ -223,7 +231,7 @@
       <article
         class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-[30%]"
         id="article" data-categories="prototyping,concepting">
-        <img src="\img\thumbnails\proto persona.png" alt="Proto Persona Thumbnail" class="w-full h-40 rounded-2xl object-cover">
+        <img src="../img/thumbnails/proto persona.png" alt="Proto Persona Thumbnail" class="w-full h-40 rounded-2xl object-cover">
         <h3 class="mt-4 text-2xl inclusive_sans">Proto-Persona's</h3>
 
         <div class="pl-4 flex gap-x-2 pt-4">
@@ -241,7 +249,7 @@
       <article
         class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-[30%]"
         id="article" data-categories="concepting">
-        <img src="\img\thumbnails\ideation.jpg" alt="Proto Persona Thumbnail" class="w-full h-40 rounded-2xl object-cover">
+        <img src="../img/thumbnails/ideation.jpg" alt="Proto Persona Thumbnail" class="w-full h-40 rounded-2xl object-cover">
         <h3 class="mt-4 text-2xl inclusive_sans">Ideation</h3>
 
         <div class="pl-4 flex gap-x-2 pt-4">
@@ -274,9 +282,9 @@
       </article>
     </section>
   </div>
-  <script src="\public/scripts/mobileMenu.js"></script>
-  <script src="\public/scripts/explore.js"></script>
-  <script src="\public/scripts/headerParser.js"></script>
+  <script src="/public/scripts/mobileMenu.js"></script>
+  <script src="/public/scripts/explore.js"></script>
+  <script src="/public/scripts/headerParser.js"></script>
 </body>
 
 </html>
