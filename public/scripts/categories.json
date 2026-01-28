@@ -33,14 +33,14 @@
       ]
     },
     {
-      "categoryName": "testing",
+      "categoryName": "evaluations",
       "subCategories": [
         "user research",
         "product research",
         "end to end testing",
-        "usability testing",
         "accessibility testing",
-        "test automation"
+        "test automation",
+        "AI gen site"
       ]
     }
   ]
