@@ -1,0 +1,222 @@
+<!doctype html>
+<html class="overscroll-y-none">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../styles/tailwind.css" rel="stylesheet">
+  <link href="../../../styles/animations.css" rel="stylesheet">
+  <link href="../../../styles/output.css" rel="stylesheet">
+  <link href="../../../styles/splide.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../../../img/gradient.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>FDD | Digitale Toegankelijkheid</title>
+</head>
+<body>
+  <!-- MOBILE MENU OPEN -->
+  <div id="menu-overlay" class="fixed  w-full h-full z-50 sm:hidden hidden background-fadein">
+    <div id="menu-panel" class="fixed top-0 left-0 w-[400px] bg-white h-full menu-panel">
+      <div class="flex justify-between items-center pr-6">
+        <img src="../../img/che-logo.jpg" alt="Website logo" class="w-40">
+        <span class="material-symbols-outlined select-none mt-6 cursor-pointer" style="font-size: 50px;"
+          id="close-menu">
+          close
+        </span>
+      </div>
+
+      <div class="h-px bg-[#d9d9d9] w-11/12 mx-auto mt-4"></div>
+
+      <div class="pl-8 mt-16 flex flex-col gap-y-10">
+        <a class="text-xl" href="../index">Home</a>
+        <a class="text-xl text_not_important" href="../explore">Articles</a>
+        <a class="text-xl text_not_important" href="../#">About me</a>
+        <a class="text-xl text_not_important" href="../contact">Contact</a>
+      </div>
+
+      <button
+        class="fixed bottom-10 left-[100px] w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
+        Explore articles
+      </button>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]  ">
+
+    <!-- MOBILE MENU -->
+    <div class="flex justify-between sm:hidden">
+
+      <div class=" w-30">
+        <img src="../../img/che-logo.jpg" alt="Website logo" srcset="">
+      </div>
+      <div class=" p-2 flex items-center">
+        <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;" id="open-menu">
+          menu
+        </span>
+      </div>
+    </div>
+
+    <!-- TABLET MENU -->
+    <div class="hidden sm:flex justify-between  max-w-[2400px] mx-auto">
+      <div class="flex items-center">
+        <div class="w-50">
+          <img src="../../img/che-logo.jpg" alt="Website logo" srcset="">
+        </div>
+        <div class="flex mt-3 pl-2 w-full justify-between">
+          <a href="../index" class="text-lg">Welcome</a>
+          <a href="../explore" class="text-lg text_not_important">Articles</a>
+
+
+          <a href="../contact" class="text-lg text_not_important">Contact me</a>
+        </div>
+      </div>
+      <div class="pt-5 pr-2">
+<button
+  onclick="window.location.href='/public/pages/explore'"
+  class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition"
+>
+  Explore articles
+</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <img src="../../img/thumbnails/digitaletoegankelijkheid.jpg" class="w-full max-h-[500px] object-cover mt-14" alt="" />
+
+
+
+  <!-- Container -->
+<article class="w-full mt-14 overscroll-y-none max-w-[1000px] mx-auto">
+    <div>
+      <!-- TOP SECTION -->
+      <div class="w-full flex flex-col px-12">
+
+        <div class="flex flex-col gap-y-4">
+          <h1 class="text-6xl">Digitale Toegankelijkheid</h1>
+          <div class="flex w-full justify-between">
+            <p class="text_not_important">Created: 28 jan, 2026</p>
+            <button title="Switch text size" id="enlargeText"><span class="material-symbols-outlined " style="font-size: 30px;">
+format_size
+</span></button>
+          </div>
+          <div class="w-full bg-[#d9d9d9] h-px"></div>
+        </div>
+
+        <!-- FIRST -->
+        <section class="mt-2" id="text-section" >
+Digitale toegankelijkheid (accessibility) houdt in dat websites zo zijn ontworpen en ontwikkeld dat iedereen ze kan gebruiken, inclusief mensen met visuele, auditieve, motorische of cognitieve beperkingen. Het zorgt ervoor dat informatie en functionaliteiten bruikbaar zijn voor alle bezoekers, vaak gestructureerd volgens de WCAG 2.1/2.2 richtlijnen. 
+        </section>
+      </div>
+      <!-- SECOND -->
+
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Wat is Digitale Toegankelijkheid</h2>
+        <section class="mt-4 " id="text-section" >
+Digitale toegankelijkheid houdt dus in tot hoeverre jou website bereikbaar is voor mensen met verschillende soorten beperkingen. Denk aan grotere knoppen of duidelijker tekst. Om te berekenen hoe toegankelijk jou website is kan je de richtlijnen van WCAG raadplegen. WCAG staat voor Web Content Accessibility Guidelines en het is de grootst gebruikte digitale toegankelijk richtlijn. 
+
+        </section>
+
+        <div class="mx-auto w-fit mt-8 max-w-[1000px]">
+          <img src="../../img/articles/digitaletoegankelijkheid/digitaletoegankelijkheid.jpg" alt="Template image" >
+          <div class="italic text_not_important text-xs">https://unsplash.com/photos/person-using-braille-writer-4MoIpDcSlr4</div>
+        </div>
+
+      </div>
+
+
+      <!-- THIRD -->
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">WCAG</h2>
+        <section class="mt-4 " id="text-section" >
+De Web Content Accessibility Guidelines (WCAG) 2.2 bevat een breed scala aan aanbevelingen om webcontent toegankelijker te maken. Door deze richtlijnen te volgen, wordt content toegankelijker voor een grotere groep mensen met een beperking, waaronder aanpassingen voor blindheid en slechtziendheid, doofheid en gehoorverlies, beperkte mobiliteit, spraakstoornissen, lichtgevoeligheid en combinaties hiervan, en enkele aanpassingen voor leerstoornissen en cognitieve beperkingen; maar ze voorzien niet in alle behoeften van gebruikers met deze beperkingen. Deze richtlijnen hebben betrekking op de toegankelijkheid van webcontent op elk type apparaat (inclusief desktops, laptops, kiosken en mobiele apparaten). Het volgen van deze richtlijnen maakt webcontent vaak ook gebruiksvriendelijker voor gebruikers in het algemeen. (Volgens de WCAG site https://www.w3.org/TR/WCAG22/)
+        </section>
+
+        <div class="mx-auto w-fit mt-8 max-w-[1000px]">
+          <img src="../../img/articles/digitaletoegankelijkheid/digitaletoegankelijkheid2.jpg" alt="Template image" >
+          <div class="italic text_not_important text-xs">https://unsplash.com/photos/black-and-white-brick-wall-ju1yFZkrxVg</div>
+        </div>
+        
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Other section</h2>
+        <section class="mt-4 " id="text-section" >
+Deze website houdt rekening met toegangelijkheid door grotere knoppen te maken voor belangrijke functies, maar ook voor minder belangrijke functies. Ook is er op contrast gelet, hoe leesbaar is de tekst boven een witte achtergrond bijvoorbeeld. Hiervoor zijn online applicaties die helpen met contrast weergeven, zoals de site https://webaim.org/resources/contrastchecker. Ten slot is ook tekstgrootte een belangrijk aspect van digitale toegankelijkheid, daarvoor is bij elk artikel een knop toegevoegd die de tekstgrootte veranderd. Dankzij deze functies is mijn website over het maken van een website meer toegankelijk voor mensen met een beperking
+        </section>
+        <div class="w-full bg-[#d9d9d9] h-px mt-8"></div>
+      </div>
+
+      <!-- Related blogs -->
+      <div class="mt-20">
+        <h2 class="text-[36px] w-full text-center">Related blogs</h2>
+        <div class="flex gap-y-8 mt-10 w-fit flex-row gap-x-8 justify-between mx-auto">
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90  flex-col pt-5 px-6 bg-[#F2F2F2] hidden sm:flex sm:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90 xl:flex flex-col pt-5 px-6 bg-[#F2F2F2] hidden sm:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+
+        </div>
+      </div>
+
+    </div>
+  </article>
+  <script src="../../scripts/mobileMenu.js"></script>
+  <script src="../../scripts/blog.js"></script>
+
+</body>
+
+</html>
