@@ -1,0 +1,233 @@
+<!doctype html>
+<html class="overscroll-y-none">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../styles/tailwind.css" rel="stylesheet">
+  <link href="../../../styles/animations.css" rel="stylesheet">
+  <link href="../../../styles/output.css" rel="stylesheet">
+  <link href="../../../styles/splide.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../../../img/gradient.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>FDD | Javascript</title>
+</head>
+<body>
+  <!-- MOBILE MENU OPEN -->
+  <div id="menu-overlay" class="fixed  w-full h-full z-50 sm:hidden hidden background-fadein">
+    <div id="menu-panel" class="fixed top-0 left-0 w-[400px] bg-white h-full menu-panel">
+      <div class="flex justify-between items-center pr-6">
+        <img src="../../img/che-logo.jpg" alt="Website logo" class="w-40">
+        <span class="material-symbols-outlined select-none mt-6 cursor-pointer" style="font-size: 50px;"
+          id="close-menu">
+          close
+        </span>
+      </div>
+
+      <div class="h-px bg-[#d9d9d9] w-11/12 mx-auto mt-4"></div>
+
+      <div class="pl-8 mt-16 flex flex-col gap-y-10">
+        <a class="text-xl" href="../index">Home</a>
+        <a class="text-xl text_not_important" href="../explore">Articles</a>
+        <a class="text-xl text_not_important" href="../#">About me</a>
+        <a class="text-xl text_not_important" href="../contact">Contact</a>
+      </div>
+
+      <button
+        class="fixed bottom-10 left-[100px] w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
+        Explore articles
+      </button>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]  ">
+
+    <!-- MOBILE MENU -->
+    <div class="flex justify-between sm:hidden">
+
+      <div class=" w-30">
+        <img src="../../img/che-logo.jpg" alt="Website logo" srcset="">
+      </div>
+      <div class=" p-2 flex items-center">
+        <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;" id="open-menu">
+          menu
+        </span>
+      </div>
+    </div>
+
+    <!-- TABLET MENU -->
+    <div class="hidden sm:flex justify-between  max-w-[2400px] mx-auto">
+      <div class="flex items-center">
+        <div class="w-50">
+          <img src="../../img/che-logo.jpg" alt="Website logo" srcset="">
+        </div>
+        <div class="flex mt-3 pl-2 w-full justify-between">
+          <a href="../index" class="text-lg">Welcome</a>
+          <a href="../explore" class="text-lg text_not_important">Articles</a>
+
+
+          <a href="../contact" class="text-lg text_not_important">Contact me</a>
+        </div>
+      </div>
+      <div class="pt-5 pr-2">
+<button
+  onclick="window.location.href='/public/pages/explore'"
+  class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition"
+>
+  Explore articles
+</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <img src="../../img/thumbnails/javascript.jpg" class="w-full max-h-[500px] object-cover mt-14" alt="Javascript thumbnail" />
+
+
+
+  <!-- Container -->
+<article class="w-full mt-14 overscroll-y-none max-w-[1000px] mx-auto">
+    <div>
+      <!-- TOP SECTION -->
+      <div class="w-full flex flex-col px-12">
+
+        <div class="flex flex-col gap-y-4">
+          <h1 class="text-6xl">Javascript</h1>
+          <div class="flex w-full justify-between">
+            <p class="text_not_important">Created: 28 Jan, 2026</p>
+            <button title="Switch text size" id="enlargeText"><span class="material-symbols-outlined " style="font-size: 30px;">
+format_size
+</span></button>
+          </div>
+          <div class="w-full bg-[#d9d9d9] h-px"></div>
+        </div>
+
+        <!-- FIRST -->
+        <section class="mt-2" id="text-section" >
+          JavaScript is een scripttaal waarmee je webpagina’s interactief kan maken. Een stukje van een scripttaal bestaat uit een aantal opdrachten die de browser uitvoert. De browser ontvangt deze opdrachten als een HTML-pagina wordt ingeladen. De scripttaal staat namelijk in de HTML-code. Dat kan op twee manieren:
+          <br>
+
+          <ul>
+            <li>direct in de code via &lt;script&gt;-tags;</li>
+            <li>met een verwijzing naar externe code.</li>
+          </ul>
+          <br>
+JavaScript is dus een veelzijdige scripttaal die webpagina's interactief en dynamisch maakt. Het is een van de drie kerntechnologieën van het web (naast HTML en CSS), waarmee functionaliteiten zoals animaties, pop-ups, formulieren en interactieve kaarten worden toegevoegd. JavaScript wordt uitgevoerd in de browser (client-side) van de gebruiker, dit betekent dat de gebruiker alles kan inzien en aanpassen, mits ze de juiste kennis hebben. 
+
+        </section>
+      </div>
+
+      <!-- SECOND -->
+
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Kan ik JavaScript?</h2>
+        <section class="mt-4 " id="text-section" >
+          
+Het mooie van JavaScript is de laagdrempeligheid en het brede gebruik van JavaScript. Je kan JavaScript NU gaan coderen in je terminal, druk op deze toetsen om de console te openen in chrome: ctrl + shift + J. Type hierin alert(“Hallo!”); en druk op enter, je hebt zojuist javascript laten draaien. JavaScript is de enige echte programmeertaal van de kerntechnologieën HTML, CSS en JS. JS is de afkorting voor JavaScript, JavaScript bestanden worden ook opgeslagen als .js. 
+
+Met dit kleine, onschuldige stukje code kan je ELKE webbrowser laten crashen. Dit lukt je niet met HTML of CSS
+<br>
+<code>
+  <br>
+  txt = "a";<br>
+  while(1){<br>
+      txt = txt += "a";   <br>
+  }<br>
+</code>
+
+<br>
+<br>
+Met JavaScript kan je bijna alles, te veel volgens sommige mensen, maar die mensen snappen de kracht van JavaScript niet. Je kan met JavaScript bijvoorbeeld een server starten, dit doe je via NodeJS. Of je kan mobiele apps maken via het Framework React Native. Je kan zelfs google extensies schrijven via JavaScript.
+
+
+
+        </section>
+
+        <div class="mx-auto w-fit mt-8 max-w-[1000px]">
+          <img src="../../img/articles/javascript/javascript.jpg" alt="Javascript image" >
+          <div class="italic text_not_important text-xs">https://unsplash.com/photos/text-g5jpH62pwes</div>
+        </div>
+
+      </div>
+
+
+      <!-- THIRD -->
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Javascript op deze website
+</h2>
+        <section class="mt-4 " id="text-section" >
+Natuurlijk wordt er ook JavaScript op deze website gebruikt. De knop naast de titel waarmee je de tekst groter kan maken is gemaakt met JavaScript, maar ook zwaardere functies zoals de zoek- en filter functies op de artikelpagina zijn beide met javascript gemaakt. De carrousel op de homepagina voor mobiel is met een JavaScript Library gemaakt (code van iemand anders) en de contact pagina wordt via JavaScript naar een server gestuurd! Javascript is dus een enorm belangrijke taal en ik zou niet zonder kunnen.
+        </section>
+
+      <!-- Related blogs -->
+      <div class="mt-20">
+        <h2 class="text-[36px] w-full text-center">Related blogs</h2>
+        <div class="flex gap-y-8 mt-10 w-fit flex-row gap-x-8 justify-between mx-auto">
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90  flex-col pt-5 px-6 bg-[#F2F2F2] hidden sm:flex sm:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+          <article
+            class="relative rounded-4xl light_dropshadow w-full h-90 xl:flex flex-col pt-5 px-6 bg-[#F2F2F2] hidden sm:basis-5/12 xl:basis-4/12"
+            aria-details="blog/coding">
+            <img src="../img/code.jpg" alt="Code image" class="w-full h-40 rounded-2xl">
+            <h3 class="mt-4 text-2xl inclusive_sans">Something about code</h3>
+
+            <div class="pl-4 flex gap-x-2 pt-4">
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Coding</div>
+              <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">Computational</div>
+            </div>
+
+            <div class="absolute bottom-0 mb-2 right-0 mr-6"><span
+                class="material-symbols-outlined primary-text google-icon">
+                arrow_forward
+              </span></div>
+          </article>
+
+
+        </div>
+      </div>
+
+    </div>
+  </article>
+  <script src="../../scripts/mobileMenu.js"></script>
+  <script src="../../scripts/blog.js"></script>
+
+</body>
+
+</html>
