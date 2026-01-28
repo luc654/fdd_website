@@ -23,18 +23,48 @@ document.querySelectorAll('#search_button').forEach(element => {
 
 // Retrieve from URL function
 document.addEventListener('DOMContentLoaded', () => {
-    const params = parseURLParams(window.location.href);
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
 
-    if (params && 'cat' in params) {
-        filter(params.cat);
+    if (cat) {
+        document.querySelectorAll('#search_button').forEach((elem) => {
+            if(elem.dataset.searchinfo === cat){
+                elem.classList.add('buttonSelected');
+            }
+        });
+        filter(cat);
     }
-
-
 });
 
 
 
 
+// Register edits on the search form
+document.getElementById('search').addEventListener("keyup", function (e){
+    console.log(e.target.value);
+    filterElement(e.target.value);
+});
+
+
+// 
+function filterElement(keyword){
+    console.log(keyword);
+    if(keyword === undefined){
+    document.querySelectorAll('#article').forEach((elem) => {    
+    elem.classList.remove('hidden')    
+    });
+    return;
+    }
+    document.querySelectorAll('#article').forEach((elem) => {
+        
+        if(elem.querySelector('h3').innerText.toLowerCase().includes(keyword.toLowerCase())){
+            elem.classList.remove('hidden');
+        } else {
+            elem.classList.add('hidden');
+            
+        }
+    });
+};
 
 
 // Filter takes a category, determines what subcategories belong to it and hides all those who dont contain those subcategories.
@@ -47,7 +77,7 @@ async function filter(category){
 }
 
 
-async function fetchJSON(){
+    async function fetchJSON(){
     const res = await fetch("/scripts/categories.json");
     const data = await res.json();
     return data;
