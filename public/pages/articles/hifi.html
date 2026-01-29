@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="overscroll-y-none">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../styles/tailwind.css" rel="stylesheet">
+  <link href="../../../styles/animations.css" rel="stylesheet">
+  <link href="../../../styles/output.css" rel="stylesheet">
+  <link href="../../../styles/splide.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../../../img/gradient.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>FDD | Ideation</title>
+</head>
+<body>
+  <!-- MOBILE MENU OPEN -->
+  <div id="menu-overlay" class="fixed  w-full h-full z-50 sm:hidden hidden background-fadein">
+    <div id="menu-panel" class="fixed top-0 left-0 w-[400px] bg-white h-full menu-panel">
+      <div class="flex justify-between items-center pr-6">
+        <a href="../index.html">
+          <img src="../../img/che-logo.jpg" alt="Website logo" class="w-40">
+        </a>
+        <span class="material-symbols-outlined select-none mt-6 cursor-pointer" style="font-size: 50px;"
+          id="close-menu">
+          close
+        </span>
+      </div>
+
+      <div class="h-px bg-[#d9d9d9] w-11/12 mx-auto mt-4"></div>
+
+      <div class="pl-8 mt-16 flex flex-col gap-y-10">
+        <a class="text-xl" href="../index">Home</a>
+        <a class="text-xl text_not_important" href="../explore.html">Articles</a>
+        <a class="text-xl text_not_important" href="../contact.html">Contact</a>
+      </div>
+
+      <button
+        class="fixed bottom-10 left-[100px] w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition">
+        Explore articles
+      </button>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="pb-2 px-2  generic_dropshadow z-40 fixed w-full bg-white top-0 lg:px-[7%]  ">
+
+    <!-- MOBILE MENU -->
+    <div class="flex justify-between sm:hidden">
+
+      <div class=" w-30">
+        <a href="../index.html">
+          <img src="../../img/che-logo.jpg" alt="Website logo" class="w-40">
+        </a>
+      </div>
+      <div class=" p-2 flex items-center">
+        <span class="material-symbols-outlined select-none mt-2" style="font-size: 40px;" id="open-menu">
+          menu
+        </span>
+      </div>
+    </div>
+
+    <!-- TABLET MENU -->
+    <div class="hidden sm:flex justify-between  max-w-[2400px] mx-auto">
+      <div class="flex items-center">
+        <div class="w-50">
+          <a href="../index.html">
+          <img src="../../img/che-logo.jpg" alt="Website logo" class="w-40">
+        </a>
+        </div>
+        <div class="flex mt-3 pl-2 w-full justify-between">
+          <a href="../index.html" class="text-lg">Welcome</a>
+          <a href="../explore.html" class="text-lg text_not_important">Articles</a>
+
+
+          <a href="../contact.html" class="text-lg text_not_important">Contact me</a>
+        </div>
+      </div>
+      <div class="pt-5 pr-2">
+<button
+  onclick="window.location.href='/public/pages/explore.html'"
+  class="w-45 p-3 mb-1 bg-[#3E7164] rounded-full text-white hover:bg-[#345e54] transition"
+>
+  Explore articles
+</button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <img src="../../img/thumbnails/ideation.jpg" class="w-full max-h-[500px] object-cover mt-14" alt="" />
+
+
+
+  <!-- Container -->
+<article class="w-full mt-14 overscroll-y-none max-w-[1000px] mx-auto">
+    <div>
+      <!-- TOP SECTION -->
+      <div class="w-full flex flex-col px-12">
+
+        <div class="flex flex-col gap-y-4">
+          <h1 class="text-6xl">Lorum Title</h1>
+          <div class="flex w-full justify-between">
+            <p class="text_not_important">Created: 11 Nov, 2025</p>
+            <button title="Switch text size" id="enlargeText"><span class="material-symbols-outlined " style="font-size: 30px;">
+format_size
+</span></button>
+          </div>
+          <div class="w-full bg-[#d9d9d9] h-px"></div>
+        </div>
+
+        <!-- FIRST -->
+        <section class="mt-2" id="text-section" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis metus hendrerit, eleifend erat nec, feugiat
+          mi. Aliquam ut iaculis mauris, vitae sodales felis. Nam a posuere augue. Quisque vel consectetur purus, a
+          convallis nunc. Maecenas tempor, ex id sollicitudin sollicitudin, augue purus dapibus sem, nec ornare risus
+          augue luctus nibh. Pellentesque vitae dui metus. Sed ante leo, pharetra eget lectus nec, tristique vulputate
+          ligula. Suspendisse bibendum semper urna, in sodales risus ornare sed. Fusce vitae accumsan magna, nec
+          ullamcorper nisi. Aliquam erat volutpat. Praesent justo odio, faucibus at tincidunt eget, lacinia nec neque.
+          Nam et urna volutpat, venenatis magna vitae, feugiat turpis.
+        </section>
+      </div>
+
+      <!-- QUOTE -->
+
+      <div class="w-full bg-[#82ADA2] sm:h-[300px] h-[250px] mt-8 flex flex-col justify-between items-center max-w-[904px] mx-auto">
+        <div class="mt-6 w-full flex justify-start pl-20 sm:text-9xl text-8xl text-white h-1/4">“</div>
+        <div class="mt-6  flex justify-start text-2xl sm:text-3xl text-white w-2/3">This div can hold quite a bit of and
+          is mainly used for </div>
+        <div class="mt-6 w-full flex justify-end pr-20 sm:text-9xl text-8xl text-white">“</div>
+      </div>
+
+      <!-- SECOND -->
+
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Other section</h2>
+        <section class="mt-4 " id="text-section" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis metus hendrerit, eleifend erat nec, feugiat
+          mi. Aliquam ut iaculis mauris, vitae sodales felis. Nam a posuere augue. Quisque vel consectetur purus, a
+          convallis nunc. Maecenas tempor, ex id sollicitudin sollicitudin, augue purus dapibus sem, nec ornare risus
+          augue luctus nibh. Pellentesque vitae dui metus. Sed ante leo, pharetra eget lectus nec, tristique vulputate
+          ligula. Suspendisse bibendum semper urna, in sodales risus ornare sed. Fusce vitae accumsan magna, nec
+          ullamcorper nisi. Aliquam erat volutpat. Praesent justo odio, faucibus at tincidunt eget, lacinia nec neque.
+          Nam et urna volutpat, venenatis magna vitae, feugiat turpis.
+        </section>
+
+        <div class="mx-auto w-fit mt-8 max-w-[1000px]">
+          <img src="../../img/articles" alt="Template image" >
+          <div class="italic text_not_important text-xs">Full link to the sourcea</div>
+        </div>
+
+      </div>
+
+
+      <!-- THIRD -->
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Other section</h2>
+        <section class="mt-4 " id="text-section" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis metus hendrerit, eleifend erat nec, feugiat
+          mi. Aliquam ut iaculis mauris, vitae sodales felis. Nam a posuere augue. Quisque vel consectetur purus, a
+          convallis nunc. Maecenas tempor, ex id sollicitudin sollicitudin, augue purus dapibus sem, nec ornare risus
+          augue luctus nibh. Pellentesque vitae dui metus. Sed ante leo, pharetra eget lectus nec, tristique vulputate
+          ligula. Suspendisse bibendum semper urna, in sodales risus ornare sed. Fusce vitae accumsan magna, nec
+          ullamcorper nisi. Aliquam erat volutpat. Praesent justo odio, faucibus at tincidunt eget, lacinia nec neque.
+          Nam et urna volutpat, venenatis magna vitae, feugiat turpis.
+        </section>
+
+        <div class="mx-auto w-fit mt-8 max-w-[1000px]">
+          <img src="../../img/articles" alt="Template image" >
+          <div class="italic text_not_important text-xs">Full link to the sourcea</div>
+        </div>
+        
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="px-12 mt-10">
+
+        <h2 class="text-4xl">Other section</h2>
+        <section class="mt-4 " id="text-section" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis metus hendrerit, eleifend erat nec, feugiat
+          mi. Aliquam ut iaculis mauris, vitae sodales felis. Nam a posuere augue. Quisque vel consectetur purus, a
+          convallis nunc. Maecenas tempor, ex id sollicitudin sollicitudin, augue purus dapibus sem, nec ornare risus
+          augue luctus nibh. Pellentesque vitae dui metus. Sed ante leo, pharetra eget lectus nec, tristique vulputate
+          ligula. Suspendisse bibendum semper urna, in sodales risus ornare sed. Fusce vitae accumsan magna, nec
+          ullamcorper nisi. Aliquam erat volutpat. Praesent justo odio, faucibus at tincidunt eget, lacinia nec neque.
+          Nam et urna volutpat, venenatis magna vitae, feugiat turpis.
+        </section>
+        <div class="w-full bg-[#d9d9d9] h-px mt-8"></div>
+      </div>
+
+      <!-- Related blogs -->
+      <div class="mt-20">
+        <h2 class="text-[36px] w-full text-center">Related blogs</h2>
+<div class="flex gap-y-8 mt-10 w-full flex-row gap-x-8 justify-between mx-auto">
+          <!-- ARTICLE HTML -->
+      <article
+        class="relative rounded-4xl light_dropshadow w-full h-90  flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:w-full hidden sm:flex"
+        id="article" data-categories="front end,languages">
+      <img src="../../img/thumbnails/html.jpg" alt="HTML Thumbnail" class="w-full h-40 rounded-2xl object-cover">
+        <h3 class="mt-4 text-2xl inclusive_sans">HTML</h3>
+
+        <div class="pl-4 flex gap-x-2 pt-4">
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">front end</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">languages</div>
+        </div>
+
+        <a href=".././articles/html.html" class="absolute bottom-0 mb-2 right-0 mr-6"><span
+            class="material-symbols-outlined primary-text google-icon">
+            arrow_forward
+          </span></a>
+      </article>
+
+   
+         <!-- ARTICLE JavaScript -->
+      <article
+        class="relative rounded-4xl light_dropshadow h-90 flex flex-col pt-5 px-6 bg-[#F2F2F2] sm:basis-10/12 md:w-full w-4/5 mx-auto"
+        id="article" data-categories="responsive design,languages">
+      <img src="../../img/thumbnails/javascript.jpg" alt="JavaScript Thumbnail" class="w-full h-40 rounded-2xl object-cover">
+        <h3 class="mt-4 text-2xl inclusive_sans">JavaScript</h3>
+
+        <div class="pl-4 flex gap-x-2 pt-4">
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">responsive design</div>
+          <div class="rounded-full w-fit px-4 text-center text-black h-6 secondary-bg">languages</div>
+        </div>
+
+        <a href=".././articles/javascript.html" class="absolute bottom-0 mb-2 right-0 mr-6"><span
+            class="material-symbols-outlined primary-text google-icon">
+            arrow_forward
+          </span></a>
+      </article>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+        </div>
+      </div>
+
+    </div>
+  </article>
+  <script src="../../scripts/mobileMenu.js"></script>
+  <script src="../../scripts/blog.js"></script>
+
+</body>
+
+</html>
