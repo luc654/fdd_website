@@ -111,3 +111,13 @@ input:focus {
     background-color: #3F7265;
     color: white;
 }
+
+.spc_block {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .spc_block {
+    display: flex;
+  }
+}
