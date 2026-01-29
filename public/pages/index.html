@@ -329,6 +329,21 @@
   <script src="../scripts/onload.js"></script>
   <script src="../scripts/helpers.js"></script>
 
+<footer style="width: 100%; padding-top: 1rem; padding-bottom: 1rem; font-size: 0.875rem; line-height: 1.25rem;background-color: rgb(7, 7, 7);  color: #f4f5f7;">
+  <div style="margin-left: auto; margin-right: auto; max-width: 72rem; display: flex; align-items: center; justify-content: space-between; padding-left: 1rem; padding-right: 1rem; position: relative;">
 </body>
+    <span>Lucas Dieleman</span>
+
+    <span style="position: absolute; left: 50%; transform: translateX(-50%);">
+      © <span id="year"></span> 
+    </span>
+
+    <span>FDD</span>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
 </html>

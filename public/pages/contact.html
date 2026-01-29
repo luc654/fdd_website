@@ -120,6 +120,7 @@
           
           
           <input type="submit" value="Send it my way" class="w-full text-white  pb-10 pt-4 pl-4  primary-bg rounded-md h-[40px] text-center ">
+          <p style="width: 100%; text-align: center; color: #3E7164;" class="hidden" id="succes">Bericht verstuurt!</p>
         </form>
         
         <!-- Mail, phone and other icons -->
@@ -143,6 +144,46 @@
         </div>
       </div>  
     </div>
+    <script>
+  const ZAPIER_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/26245241/ul6p60p/";
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      await fetch(ZAPIER_WEBHOOK_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      });
+
+      document.getElementById('succes').classList.remove('hidden');
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong.");
+    }
+  });
+</script>
       <script src="../scripts/mobileMenu.js"></script>
-    </body>
+    <footer style="width: 100%; padding-top: 1rem; padding-bottom: 1rem; font-size: 0.875rem; line-height: 1.25rem; color: #9ca3af;">
+  <div style="margin-left: auto; margin-right: auto; max-width: 72rem; display: flex; align-items: center; justify-content: space-between; padding-left: 1rem; padding-right: 1rem; position: relative;">
+</body>
+    <span>Lucas Dieleman</span>
+
+    <span style="position: absolute; left: 50%; transform: translateX(-50%);">
+      © <span id="year"></span> 
+    </span>
+
+    <span>FDD</span>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+    
 </html>
