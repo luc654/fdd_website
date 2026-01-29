@@ -78,7 +78,7 @@ async function filter(category){
 
 
     async function fetchJSON(){
-    const res = await fetch("categories.json");
+    const res = await fetch("../scripts/categories.json");
     const data = await res.json();
     return data;
 }
