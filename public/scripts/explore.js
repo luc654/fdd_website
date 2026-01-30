@@ -96,7 +96,7 @@ function returnOnlySubcategoriesFromJSON(json, category){
 
 // dont talk shit about 'uhh function too long' this is a helper function and is only needed once and gives all the explanation.
 function iterateThroughAllArticlesAndRemoveWithoutGivenList(categoriesSubcat) {
-  document.querySelectorAll('article').forEach(article => {
+  document.querySelectorAll('#article').forEach(article => {
     const categories = article.dataset.categories?.split(',') || [];
 
     const matches = categories.some(cat =>
